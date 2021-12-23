@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <title>Decdata</title>
+    </head>
+    <body>
+        <table class='table table-condensed'>
+            <thead>
+                <tr>
+                    <td>table temp　|  </td>
+                    <td>rack temp(H)|  </td>
+                    <td>rack temp(M)|  </td>
+                    <td>rack temp(L)|  </td>
+                    <td>　　time1　　|  </td>
+                    <td>　temp1　|  </td>
+                    <td>　humi1　| </td>
+                    <td>　lq1　　| </td>
+                    <td>　　time2　　|  </td>
+                    <td>　temp2　|  </td>
+                    <td>　humi2　| </td>
+                    <td>　lq2　　| </td>
+                    <td>　　time3　　|  </td>
+                    <td>　temp3　|  </td>
+                    <td>　humi3　| </td>
+                    <td>　lq3　　| </td>
+                    <td>　　time4　　|  </td>
+                    <td>　temp4　|  </td>
+                    <td>　humi4　| </td>
+                    <td>　lq4　　| </td>
+                </tr>
+            </thead>
+            <tbody>
+                <% for doc in @docs: %>
+                <tr>
+                    <td><%= doc.table_temp     %></td>
+                    <td><%= doc.rack_h     %></td>
+                    <td><%= doc.rack_m     %></td>
+                    <td><%= doc.rack_l     %></td>
+                    <td><%= doc.time1     %></td>
+                    <td><%= doc.temp1     %></td>
+                    <td><%= doc.humi1      %></td>
+                    <td><%= doc.lq1      %></td>
+                    <td><%= doc.time2     %></td>
+                    <td><%= doc.temp2      %></td>
+                    <td><%= doc.humi2      %></td>
+                    <td><%= doc.lq2      %></td>
+                    <td><%= doc.time3     %></td>
+                    <td><%= doc.temp3      %></td>
+                    <td><%= doc.humi3     %></td>
+                    <td><%= doc.lq3      %></td>
+                    <td><%= doc.time4     %></td>
+                    <td><%= doc.temp4      %></td>
+                    <td><%= doc.humi4      %></td>
+                    <td><%= doc.lq4     %></td>
+                </tr>
+                <% end %>
+            </tbody>
+            
+        </table>
+    </body>
+</html>
